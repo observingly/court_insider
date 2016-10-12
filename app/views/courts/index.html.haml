@@ -1,15 +1,8 @@
-%h1 Courts#index
-%p Find me in app/views/courts/index.html.haml
 = link_to "Sign Out", destroy_user_session_path, method: :delete
-
--# %p
--# = link_to "Village Sports Club"
--# %p Address: El Grande Avenue corner Tropical Avenue, Topman Village Las Piñas
--#
--# %p
--# = link_to "Village Sports Club"
--# %p Address: El Grande Avenue corner Tropical Avenue, Topman Village Las Piñas
--#
--# %p
--# = link_to "Village Sports Club"
--# %p Address: El Grande Avenue corner Tropical Avenue, Topman Village Las Piñas
+%p
+- @courts.each do |court|
+  %tr
+    %td= court.name
+    %td= court.address
+    %td
+      = link_to "View", show_court_path(court)

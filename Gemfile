@@ -1,8 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use postgresql as the database for Active Record
@@ -40,6 +37,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  # Pretty printer
+  gem 'awesome_print'
   # Email CSS manager
   gem 'premailer-rails', '~> 1.9', '>= 1.9.2'
 end
@@ -59,3 +58,6 @@ gem 'haml-rails', '~> 0.9'
 # User Authentication
 gem 'devise',           '~> 4.2'
 gem 'devise_invitable', '~> 1.7.0'
+
+#Slugs
+gem 'friendly_id', '~> 5.1.0'
