@@ -3,6 +3,6 @@ class CourtsController < ApplicationController
     @courts = Court.all
   end
   def show
-    @courts =  Court.friendly.find(params[:slug])
+    @court =  Court.friendly.find(params[:id])
   end
 end
