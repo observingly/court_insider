@@ -1,4 +1,7 @@
 = link_to "Back", courts_path
 %p= @court.name
 %p= @court.address
-= link_to "Rent Court", rentals_path
+= link_to "#", class: "btn btn-default", data: { target: '#rent-court-modal', toggle: 'modal'} do
+  %span.rent.ion-ios-basketball-outline
+  %span Rent Court
+= render "courts/modals/rent_court" 

@@ -1,0 +1,9 @@
+#rent-court-modal.modal.fade{tabindex: -1, :'data-js-rent-court' => true}
+  .modal-dialog
+    .modal-content
+      %button.close{ type: 'button', data: { dismiss: 'modal'} }
+        %i.ion-md-close
+      .modal-header
+        .heading 
+          %h2= @court.name
+        .modal-body
